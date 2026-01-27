@@ -42,7 +42,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      10_create_fig9.R
 #
@@ -57,10 +57,10 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig9.txt
+#       code/_LOGS/Plot/main_results_plot_fig9_log.txt
 #   - Plot:
-#       Plot/main_results/fig9_bin5_LML.jpg
-#       Plot/main_results/fig9_bin10_LML.jpg
+#       Plot/main_results/fig9_bin5_LML.rds
+#       Plot/main_results/fig9_bin10_LML.rds
 #
 # Description:
 #   This script recreate Figure 9: Log-multiplicative layer effects
