@@ -13,7 +13,6 @@ This repository contains the replication code for the paper:
 
 It provides all scripts necessary to reproduce the **baseline empirical results and figures locally**, as well as the codes for replicating the **full set of results using high-performance computing (HPC)** resources.
 
-> **Disclaimer:** All remaining faults are the responsibility of **Weiqi Wang**.
 
 ---
 
