@@ -62,7 +62,7 @@ options(warn = -1)
 #       Data/robustness_check/age2564_bc.rds
 #
 # Description:
-#   This script generates the robustness results using weighted father–child
+#   This script generates the robustness results using father–child
 #   occupational mobility pairs constructed from the General Social Survey (GSS).
 #   The analysis restricts the sample to respondents born between 1945 and 1990
 #   and observed at ages 25–64 at the time of survey.
