@@ -44,35 +44,36 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R4_generate_alternative_measure_plots.R
+# Script:      RD_generate_alternative_measure_plots.R
 #
 # Inputs:
 #   - Baseline Result Data:
-#       data/main_results/estimation/main_rst_baseline.rds
+#       Data/main_results/main_rst_baseline.rds
 #   - Bootstrap Result Data:
-#       data/main_results/estimation/main_rst_boot.rds
+#       Data/main_results//main_rst_boot.rds
 #
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_alternative_measure.txt
+#       code/_LOGS/Plot/robustness_check_plot_figD1_D4_log.txt
 #   - Plot:
-#       data/robust/plots/alternative_measure/figD1_outflow_t1.png
-#       data/robust/plots/alternative_measure/figD1_outflow_ss.png
-#       data/robust/plots/alternative_measure/figD2_MFPT.png
-#       data/robust/plots/alternative_measure/figD3_dt.png
-#       data/robust/plots/alternative_measure/figD3_lambda2.png
-#       data/robust/plots/alternative_measure/figD4_altham_index.png
-#       data/robust/plots/alternative_measure/figD4_HD.png
+#       Plot/robustness_check/alternative_measure/figD1_outflow_t1.rds
+#       Plot/robustness_check/alternative_measure/figD1_outflow_ss.rds
+#       Plot/robustness_check/alternative_measure/figD2_MFPT.rds
+#       Plot/robustness_check/alternative_measure/figD3_dt.rds
+#       Plot/robustness_check/alternative_measure/figD3_lambda2.rds
+#       Plot/robustness_check/alternative_measure/figD4_altham_index.rds
+#       Plot/robustness_check/alternative_measure/figD4_HD.rds
 #
 # Description:
-#   This script recreate Figure 6: Rate of decay in aggregate intergenerational  
-#   memory between generation t = 1 and t = 2.
+#   This script recreate Figure D1: Class outflows at generation t = 1 
+#   and at the steady state; Figure D2: Mean first passage time; Figure D3:
+#   Alternative measures of memory; Figure D4:Alternative measures of dependence.
 #-------------------------------------------------------------------------------
 
 
@@ -673,6 +674,17 @@ saveRDS(
     file.path(
       dir_plot,
       "figD4_altham_index.rds"
+    )
+  )
+)
+
+# 7. Hellinger Dependence
+saveRDS(
+  Hellinger_Dependece,
+  file = path.expand(
+    file.path(
+      dir_plot,
+      "figD4_HD.rds"
     )
   )
 )
