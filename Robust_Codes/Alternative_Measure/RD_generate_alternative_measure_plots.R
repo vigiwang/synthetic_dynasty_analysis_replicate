@@ -2,7 +2,7 @@
 rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
-subsubsection <- "weighted"
+subsubsection <- "alternative_measures"
 title <- "plot_figD1_D4"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
