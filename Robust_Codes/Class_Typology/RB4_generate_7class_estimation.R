@@ -38,30 +38,30 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      RB4_generate_7class_estimation.R
 #
 # Inputs:
 #   - GSS father–child occupational pairs (7-class EGP):
-#       data/robust/class_typology/gss_fc_occ10_7class.rds
+#       Data/robustness_check/gss_fc_occ10_7class.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/synthetic_dynasty_estimation.R
+#       Functions/synthetic_dynasty_estimation.R
 #           (Markov-based mobility estimators and related calculations)
-#       _Functions/process_results.R
+#       Functions/process_results.R
 #           (post-processing of baseline and bootstrap results, including
 #            construction of bias-corrected estimators)
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/7class_estimation.txt
+#       code/_LOGS/Data/robustness_check_7class_estimation_log.txt
 #   - Estimation output:
-#       data/robust/class_typology/7class_bc.rds
+#       Data/robustness_check/7class_bc.rds
 #
 # Description:
-#   This script generates the robustness results using weighted father–child
+#   This script generates the robustness results using 7-class typology father–child
 #   occupational mobility pairs constructed from the General Social Survey (GSS).
 #   The analysis restricts the sample to respondents born between 1945 and 1990
 #   and observed at ages 25–55 at the time of survey.
