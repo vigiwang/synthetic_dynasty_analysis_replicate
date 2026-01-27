@@ -41,7 +41,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      03_create_fig2.R
 #
@@ -56,12 +56,12 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/data/_LOGS/plot_fig2.txt
+#       code/_LOGS/Plot/main_results_plot_fig2_log.txt
 #   - Plot:
-#       Plot/main_results/fig2_OM.png
-#       Plot/main_results/fig2_SM.png
-#       Plot/main_results/fig2_EM.png
-#       Plot/main_results/fig2_UP_DOWN.png
+#       Plot/main_results/fig2_OM.rds
+#       Plot/main_results/fig2_SM.rds
+#       Plot/main_results/fig2_EM.rds
+#       Plot/main_results/fig2_UP_DOWN.rds
 #
 # Description:
 #   This script recreate Figure 2: Overall Mobility(t = 1), 
