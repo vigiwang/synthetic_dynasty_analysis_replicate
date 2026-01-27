@@ -43,7 +43,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      07_create_fig6.R
 #
@@ -61,9 +61,9 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig6.txt
+#       code/_LOGS/Plot/main_results_plot_fig6_log.txt
 #   - Plot:
-#       Plot/main_results/fig6_AIM_delta.jpg
+#       Plot/main_results/fig6_AIM_delta.rds
 #
 # Description:
 #   This script recreate Figure 6: Rate of decay in aggregate intergenerational  
