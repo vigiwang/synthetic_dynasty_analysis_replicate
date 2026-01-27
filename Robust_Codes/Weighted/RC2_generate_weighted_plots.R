@@ -44,35 +44,38 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R6b_create_figC1_C7.R
+# Script:      RC2_generate_weighted_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/weighted_bc.rds
+#   - Weighted Bias-corrected estimation results:
+#       Data/robustness_check/weighted_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/plot_figC1_4.txt
+#       code/_LOGS/probustness_check_plot_figC1_C7_log.txt
 #   - Plot:
-#       data/robust/plots/age/figC1_weighted_OM.png
-#       data/robust/plots/age/figC1_weighted_SM.png
-#       data/robust/plots/age/figC1_weighted_EM.png
-#       data/robust/plots/age/figC1_weighted_UP_DOWN.png
-#       data/robust/plots/age/figC2_weighted_OM_by_t.png
-#       data/robust/plots/age/figC3_weighted_AIM.png
-#       data/robust/plots/age/figC4_weighted_bin5_LML.png
+#       Plot/robustness_check/weighted/figC1_weighted_OM.rds
+#       Plot/robustness_check/weighted/figC1_weighted_SM.rds
+#       Plot/robustness_check/weighted/figC1_weighted_EM.rds
+#       Plot/robustness_check/weighted/figC1_weighted_UP_DOWN.rds
+#       Plot/robustness_check/weighted/figC2_weighted_OM_by_t.rds
+#       Plot/robustness_check/weighted/figC3_weighted_MTE.rds
+#       Plot/robustness_check/weighted/figC4_weighted_AIM.rds
+#       Plot/robustness_check/weighted/figC5_weighted_IM.rds
+#       Plot/robustness_check/weighted/figC6_weighted_AIM_1945_t.rds
+#       Plot/robustness_check/weighted/figC6_weighted_IM_1945_t.rds
+#       Plot/robustness_check/weighted/figC6_weighted_AIM_1990_t.rds
+#       Plot/robustness_check/weighted/figC6_weighted_IM_1990_t.rds
+#       Plot/robustness_check/weighted/figC7_weighted_bin10_LML.rds
+#       Plot/robustness_check/weighted/figC7_weighted_bin5_LML.rds
 
 # Description:
-#   This script recreate Figure C1: Overall Mobility(t = 1), 
-#   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
-#   Upward-Downward Mobility(t = 1); Figure C2: Overall Mobility 
-#   across synthetic generations.in paper; Figure C3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure C4:
+#   This script recreate all the plots for weighted samples.
 #
 #-------------------------------------------------------------------------------
 
