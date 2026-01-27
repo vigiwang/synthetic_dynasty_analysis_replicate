@@ -41,38 +41,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R2b_create_figE9_12.R
+# Script:      RE7_generate_mother_child_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_mc_bc.rds
+#   - Mother-child bias-corrected results:
+#       Data/robustness_check/5class_mc_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figE1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figE1_E4_log.txt
 #   - Plot:
-#       data/robust/plots/age/figE9_mc_OM.png
-#       data/robust/plots/age/figE9_mc_SM.png
-#       data/robust/plots/age/figE9_mc_EM.png
-#       data/robust/plots/age/figE9_mc_UP_DOWN.png
-#       data/robust/plots/age/figE10_mc_OM_by_t.png
-#       data/robust/plots/age/figE11_mc_AIM.png
-#       data/robust/plots/age/figE12_mc_bin5_LML.png
+#       Plot/robustness_check/gender/figE9_mc_OM.rds
+#       Plot/robustness_check/gender/figE9_mc_SM.rds
+#       Plot/robustness_check/gender/figE9_mc_EM.rds
+#       Plot/robustness_check/gender/figE9_mc_UP_DOWN.rds
+#       Plot/robustness_check/gender/figE10_mc_OM_by_t.rds
+#       Plot/robustness_check/gender/figE11_mc_AIM.rds
+#       Plot/robustness_check/gender/figE12_mc_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure E9: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure E10: Overall Mobility 
 #   across synthetic generations.in paper; Figure E11: Aggregate 
-#   intergenerational memory at generation t = 1; Figure E12:
-#
+#   intergenerational memory at generation t = 1; Figure E12: Log-multiplicative
+#   layer effect.
 #-------------------------------------------------------------------------------
 
 
