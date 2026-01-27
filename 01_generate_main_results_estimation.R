@@ -38,7 +38,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      01_generate_main_results_estimation.R
 #
@@ -56,7 +56,7 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/estimation.txt
+#       code/_LOGS/Data/main_results_bias_corrected_results_estimation_log.txt
 #   - Estimation output:
 #       Data/main_results/main_rst_bc.rds
 #       Data/main_results/main_rst_baseline.rds
