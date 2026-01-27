@@ -38,30 +38,30 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R5_generate_gender_results_data.R
+# Script:      RE1_generate_gender_analysis_data.R
 #
 # Inputs:
 #   - GSS microdata (via the {gssr} package): gssr::data(gss_all)
 #   - Occupational crosswalk (Morgan, 2017):
-#       data/raw/occ10-to-egp-class-crosswalk.csv
+#       Data/occ10-to-egp-class-crosswalk.csv
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/gender_analysis_data_generation.txt
+#       code/_LOGS/Data/robustness_check_gender_log.txt
 #   - Analytical dataset:
-#       - data/robust/gender/robust_mc.rds
-#       - data/robust/gender/robust_dc.rds
-#       - data/robust/gender/robust_fs.rds
-#       - data/robust/gender/robust_fd.rds
+#       - Data/robustness_check/5class_mc_bc.rds
+#       - Data/robustness_check/5class_fd_bc.rds
+#       - Data/robustness_check/5class_fs_bc.rds
+#       - Data/robustness_check/5class_pc_bc.rds
 #
 # Description:
 #   This script constructs the main analytical sample for class typology
 #   robustness check from the General Social Survey (GSS). It codes both respondents' 
-#   and their fathers' occupations into the 2010 Census Occupational Classification (COC). These COC codes are then 
-#   mapped to the 5-class EGP typology using the Morgan (2017) occupational 
-#   crosswalk.
+#   and their parents' occupations into the 2010 Census Occupational Classification (COC). 
+#   These COC codes are then mapped to the 5-class EGP typology using the Morgan (2017) 
+#   occupational crosswalk.
 #
 # Notes:
 #   - The GSS input is accessed programmatically through {gssr}. For exact
