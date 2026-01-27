@@ -55,10 +55,10 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig1.txt
+#       code/plot/_LOGS/plot_fig1.txt
 #   - Plot:
-#       data/main_results/plots/fig1_father.pdf
-#       data/main_results/plots/fig1_child.pdf
+#       Plot/main_results/fig1_father.pdf
+#       Plot/main_results/fig1_child.pdf
 # Description:
 #   This script recreate Figure 1: Sample sizes by class origin, destination, 
 #   and birth cohort in paper.
