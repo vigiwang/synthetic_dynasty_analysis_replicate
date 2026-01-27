@@ -45,27 +45,27 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R6b_create_figG4_6.R
+# Script:      RG4_generate_bin5_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/bin5_bc.rds
+#   - Bin = 5 Bias-corrected results:
+#       Data/robustness_check/bin5_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figG1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figG4_G6_log.txt
 #   - Plot:
-#       data/robust/plots/age/figG4_bin5_OM.png
-#       data/robust/plots/age/figG4_bin5_SM.png
-#       data/robust/plots/age/figG4_bin5_EM.png
-#       data/robust/plots/age/figG4_bin5_UP_DOWN.png
-#       data/robust/plots/age/figG5_bin5_OM_by_t.png
-#       data/robust/plots/age/figG6_bin5_AIM.png
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_OM.png
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_SM.png
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_EM.png
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_UP_DOWN.png
+#       Plot/robustness_check/alternative_smoothing/figG5_bin5_OM_by_t.png
+#       Plot/robustness_check/alternative_smoothing/figG6_bin5_AIM.png
 
 # Description:
 #   This script recreate Figure G4: Overall Mobility(t = 1), 
