@@ -49,7 +49,7 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/data_generation.txt
+#       code/_LOGS/Data/main_results_occ_pairs_generation_log.txt
 #   - Analytical dataset:
 #       Data/main_results/gss_fc_occ10_5class.rds
 #
