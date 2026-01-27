@@ -49,21 +49,21 @@ options(warn = -1)
 #
 # Inputs:
 #   - Baseline Result Data:
-#       data/main_results/estimation/main_rst_baseline.rds
+#       Data/main_results/main_rst_baseline.rds
 #   - Bootstrap Result Data:
-#       data/main_results/estimation/main_rst_boot.rds
+#       Data/main_results/main_rst_boot.rds
 #
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
 #       code/main_results/_LOGS/plot_fig6.txt
 #   - Plot:
-#       data/main_results/plots/fig6_AIM_delta.jpg
+#       Plot/main_results/fig6_AIM_delta.jpg
 #
 # Description:
 #   This script recreate Figure 6: Rate of decay in aggregate intergenerational  
