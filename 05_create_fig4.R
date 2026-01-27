@@ -42,7 +42,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      05_create_fig4.R
 #
@@ -57,9 +57,9 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig4.txt
+#       code/_LOGS/Plot/main_results_plot_fig4_log.txt
 #   - Plot:
-#       Plot/main_results/fig4_MTE.jpg
+#       Plot/main_results/fig4_MTE.rds
 #
 # Description:
 #   This script recreate Figure 4: Mean time to exit from each 
