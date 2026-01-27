@@ -43,7 +43,7 @@ options(warn = -1)
 # Script:      RE2_generate_father_daughter_estimation.R
 #
 # Inputs:
-#   - GSS mother–child occupational pairs (5-class EGP):
+#   - GSS father-daughter occupational pairs (5-class EGP):
 #       Data/robustness_check/gss_fd_occ10_5class.rds
 #   - Helper functions:
 #       Functions/utils.R
