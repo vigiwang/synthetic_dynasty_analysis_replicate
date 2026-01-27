@@ -44,35 +44,36 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      RB7_create_figB13_B16.R
+# Script:      RB7_create_noself_plots.R
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_noself_bc.rds
+#       Data/robustness_check/5class_noself_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figB9_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figB13_B16_log.txt
 #   - Plot:
-#       data/robust/plots/age/figB13_noself_OM.png
-#       data/robust/plots/age/figB13_noself_SM.png
-#       data/robust/plots/age/figB13_noself_EM.png
-#       data/robust/plots/age/figB13_noself_UP_DOWN.png
-#       data/robust/plots/age/figB14_noself_OM_by_t.png
-#       data/robust/plots/age/figB15_noself_AIM.png
-#       data/robust/plots/age/figB16_noself_bin5_LML.png
+#       Plot/robustness_check/class_typology/figB13_noself_OM.png
+#       Plot/robustness_check/class_typology/figB13_noself_SM.png
+#       Plot/robustness_check/class_typology/figB13_noself_EM.png
+#       Plot/robustness_check/class_typology/figB13_noself_UP_DOWN.png
+#       Plot/robustness_check/class_typology/figB14_noself_OM_by_t.png
+#       Plot/robustness_check/class_typology/figB15_noself_AIM.png
+#       Plot/robustness_check/class_typology/figB16_noself_bin5_LML.png
 
 # Description:
 #   This script recreate Figure B9: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure B10: Overall Mobility 
 #   across synthetic generations.in paper; Figure B11: Aggregate 
-#   intergenerational memory at generation t = 1; Figure B12:
+#   intergenerational memory at generation t = 1; Figure B12: Bin = 5 
+#   Log-multiplicative layer effect model.
 #
 #-------------------------------------------------------------------------------
 
