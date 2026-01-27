@@ -48,7 +48,7 @@ options(warn = -1)
 # Script:      RG2_generate_raw_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
+#   - No-smoothing Data Bias-Corrected Results:
 #       Data/robustness_check/raw_bc.rds
 #   - Helper functions:
 #       Functions/utils.R
