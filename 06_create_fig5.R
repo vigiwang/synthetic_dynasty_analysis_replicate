@@ -57,9 +57,9 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig5.txt
+#       code/_LOGS/Plot/main_results_plot_fig5_log.txt
 #   - Plot:
-#       Plot/main_results/fig5_AIM.jpg
+#       Plot/main_results/fig5_AIM.rds
 #
 # Description:
 #   This script recreate Figure 5: Aggregate intergenerational memory at generation 
