@@ -66,8 +66,8 @@ options(warn = -1)
 #       data/main_results/plots/fig8_AIM_1990_t.jpg
 #
 # Description:
-#   This script recreate Figure 8: Intergenerational memory at generation t = 1 
-#   by class
+#   This script recreate Figure 8: Memory across synthetic generations in the 1945 and 1990 
+#   birth cohorts
 #-------------------------------------------------------------------------------
 
 
