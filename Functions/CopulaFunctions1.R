@@ -1,4 +1,4 @@
-#### Tom's Copula Functions #######
+#### The authors gratefully acknowledge Thomas Colman for sharing his copula functions. #######
 
 calcDiscreteCopulaBasic <- function(porig) {
   xdim <- dim(porig)
