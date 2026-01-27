@@ -47,21 +47,21 @@ options(warn = -1)
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/main_results/estimation/main_rst_bc.rds
+#       data/main_results/main_rst_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig2.txt
+#       code/data/_LOGS/plot_fig2.txt
 #   - Plot:
-#       data/main_results/plots/fig2_OM.png
-#       data/main_results/plots/fig2_SM.png
-#       data/main_results/plots/fig2_EM.png
-#       data/main_results/plots/fig2_UP_DOWN.png
+#       Plot/main_results/fig2_OM.png
+#       Plot/main_results/fig2_SM.png
+#       Plot/main_results/fig2_EM.png
+#       Plot/main_results/fig2_UP_DOWN.png
 #
 # Description:
 #   This script recreate Figure 2: Overall Mobility(t = 1), 
