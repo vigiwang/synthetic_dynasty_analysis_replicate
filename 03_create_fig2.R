@@ -47,7 +47,7 @@ options(warn = -1)
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/main_results/main_rst_bc.rds
+#       Data/main_results/main_rst_bc.rds
 #   - Helper functions:
 #       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
