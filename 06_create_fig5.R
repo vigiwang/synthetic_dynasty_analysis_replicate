@@ -48,18 +48,18 @@ options(warn = -1)
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/main_results/estimation/main_rst_bc.rds
+#       Data/main_results/main_rst_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
 #       code/main_results/_LOGS/plot_fig5.txt
 #   - Plot:
-#       data/main_results/plots/fig5_AIM.jpg
+#       Plot/main_results/fig5_AIM.jpg
 #
 # Description:
 #   This script recreate Figure 5: Aggregate intergenerational memory at generation 
