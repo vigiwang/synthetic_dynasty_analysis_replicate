@@ -59,13 +59,13 @@ options(warn = -1)
 #   - Log file:
 #       code/_LOGS/Plot/robustness_check_plot_figB13_B16_log.txt
 #   - Plot:
-#       Plot/robustness_check/class_typology/figB13_noself_OM.png
-#       Plot/robustness_check/class_typology/figB13_noself_SM.png
-#       Plot/robustness_check/class_typology/figB13_noself_EM.png
-#       Plot/robustness_check/class_typology/figB13_noself_UP_DOWN.png
-#       Plot/robustness_check/class_typology/figB14_noself_OM_by_t.png
-#       Plot/robustness_check/class_typology/figB15_noself_AIM.png
-#       Plot/robustness_check/class_typology/figB16_noself_bin5_LML.png
+#       Plot/robustness_check/class_typology/figB13_noself_OM.rds
+#       Plot/robustness_check/class_typology/figB13_noself_SM.rds
+#       Plot/robustness_check/class_typology/figB13_noself_EM.rds
+#       Plot/robustness_check/class_typology/figB13_noself_UP_DOWN.rds
+#       Plot/robustness_check/class_typology/figB14_noself_OM_by_t.rds
+#       Plot/robustness_check/class_typology/figB15_noself_AIM.rds
+#       Plot/robustness_check/class_typology/figB16_noself_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure B9: Overall Mobility(t = 1), 
