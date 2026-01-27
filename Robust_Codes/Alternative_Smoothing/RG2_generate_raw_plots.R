@@ -60,12 +60,12 @@ options(warn = -1)
 #   - Log file:
 #       code/_LOGS/Plot/robustness_check_plot_figG7_G9_log.txt
 #   - Plot:
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_OM.png
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_SM.png
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_EM.png
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_UP_DOWN.png
-#       Plot/robustness_check/alternative_smoothing/figG8_raw_OM_by_t.png
-#       Plot/robustness_check/alternative_smoothing/figG9_raw_AIM.png
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_OM.rds
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_SM.rds
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_EM.rds
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_UP_DOWN.rds
+#       Plot/robustness_check/alternative_smoothing/figG8_raw_OM_by_t.rds
+#       Plot/robustness_check/alternative_smoothing/figG9_raw_AIM.rds
 
 # Description:
 #   This script recreate Figure G7: Overall Mobility(t = 1), 
