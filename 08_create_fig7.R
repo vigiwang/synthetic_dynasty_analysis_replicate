@@ -43,7 +43,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      08_create_fig7.R
 #
@@ -58,9 +58,9 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig7.txt
+#       code/_LOGS/Plot/main_results_plot_fig7_log.txt
 #   - Plot:
-#       Plot/main_results/fig7_IM.jpg
+#       Plot/main_results/fig7_IM.rds
 #
 # Description:
 #   This script recreate Figure 7: Intergenerational memory at generation t = 1 by 
