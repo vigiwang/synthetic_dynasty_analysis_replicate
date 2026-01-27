@@ -43,38 +43,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R6b_create_figH1_4.R
+# Script:      RF2_generate_extended_cohorts.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/white_bc.rds
+#   - Extended-cohorts Bias-Corrected estimation results:
+#       Data/robustness_check/more_cohorts_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figH1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figH1_H4_log.txt
 #   - Plot:
-#       data/robust/plots/age/figH1_extended_cohorts_OM.png
-#       data/robust/plots/age/figH1_extended_cohorts_SM.png
-#       data/robust/plots/age/figH1_extended_cohorts_EM.png
-#       data/robust/plots/age/figH1_extended_cohorts_UP_DOWN.png
-#       data/robust/plots/age/figH2_extended_cohorts_OM_by_t.png
-#       data/robust/plots/age/figH3_extended_cohorts_AIM.png
-#       data/robust/plots/age/figH4_extended_cohorts_bin5_LML.png
+#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_OM.rds
+#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_SM.rds
+#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_EM.rds
+#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_UP_DOWN.rds
+#       Plot/robustness_check/extended_cohorts/figH2_extended_cohorts_OM_by_t.rds
+#       Plot/robustness_check/extended_cohorts/figH3_extended_cohorts_AIM.rds
+#       Plot/robustness_check/extended_cohorts/figH4_extended_cohorts_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure H1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure H2: Overall Mobility 
 #   across synthetic generations.in paper; Figure H3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure H4
-#
+#   intergenerational memory at generation t = 1; Figure H4: Log-multiplicative
+#   Layer effect.
 #-------------------------------------------------------------------------------
 
 
