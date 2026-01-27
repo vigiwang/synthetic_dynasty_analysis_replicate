@@ -38,20 +38,20 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      00_generate_main_results_data.R
 #
 # Inputs:
 #   - GSS microdata (via the {gssr} package): gssr::data(gss_all)
 #   - Occupational crosswalk (Morgan, 2017):
-#       data/raw/occ10-to-egp-class-crosswalk.csv
+#       Data/occ10-to-egp-class-crosswalk.csv
 #
 # Outputs:
 #   - Log file:
 #       code/main_results/_LOGS/data_generation.txt
 #   - Analytical dataset:
-#       data/main_results/raw/gss_fc_occ10_5class.rds
+#       Data/main_results/gss_fc_occ10_5class.rds
 #
 # Description:
 #   This script constructs the main analytical sample from the General Social
