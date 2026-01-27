@@ -38,30 +38,31 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      RB1_generate_class_results_data.R
+# Script:      RB1_generate_class_typology_data.R
 #
 # Inputs:
 #   - GSS microdata (via the {gssr} package): gssr::data(gss_all)
 #   - Occupational crosswalk (Morgan, 2017):
-#       data/raw/occ10-to-egp-class-crosswalk.csv
+#       Data/occ10-to-egp-class-crosswalk.csv
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/alternative_class_generation.txt
+#       code/_LOGS/Data/robustness_check_alternative_class_typology_generation_log.txt
 #   - Analytical dataset:
-#       - data/robust/class/robust_6class_dt.rds
-#       - data/robust/class/robust_7class_dt.rds
-#       - data/robust/class/robust_noself_dt.rds
-#       - data/robust/class/robust_nofarmer_dt.rds
+#       - Data/robustness_check/gss_fc_occ10_6class.rds
+#       - Data/robustness_check/gss_fc_occ10_7class.rds
+#       - Data/robustness_check/gss_fc_occ10_5class_noself.rds
+#       - Data/robustness_check/gss_fc_occ10_5class_nosfarmer.rds
 #
 # Description:
-#   This script constructs the main analytical sample for class typology
+#   This script constructs the analytical sample for alternative class typology
 #   robustness check from the General Social Survey (GSS). It codes both respondents' 
 #   and their fathers' occupations into the 2010 Census Occupational Classification (COC). These COC codes are then 
-#   mapped to the 5-class EGP typology using the Morgan (2017) occupational 
-#   crosswalk.
+#   mapped to the 6-class EGP typology(Pfeffer and Hertel (2015)), 7-class EGP typology(Morgan (2017)), benchmark 
+#   5-class typology without self-employed individuals(Erikson and Goldthorpe (2010)),benchmark 5-class typology 
+#   without farmers, using the Morgan (2017) occupational crosswalk.
 #
 # Notes:
 #   - The GSS input is accessed programmatically through {gssr}. For exact
