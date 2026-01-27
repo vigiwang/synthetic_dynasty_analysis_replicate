@@ -59,7 +59,7 @@ options(warn = -1)
 #   - Log file:
 #       code/_LOGS/Data/robustness_check_extended_cohorts_estimation_log.txt
 #   - Estimation output:
-#       Data/robustness_check/extended_cohorts_bc.rds
+#       Data/robustness_check/more_cohorts_bc.rds
 #
 # Description:
 #   This script generates the robustness results using father–child
