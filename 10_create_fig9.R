@@ -47,20 +47,20 @@ options(warn = -1)
 # Script:      10_create_fig9.R
 #
 # Inputs:
-#   - Estimated Bias-corrected results:
-#       data/main_results/estimation/main_rst_bc.rds
+#   - GSS father–child occupational pairs (5-class EGP):
+#       Data/main_results/gss_fc_occ10_5class.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
 #       code/main_results/_LOGS/plot_fig9.txt
 #   - Plot:
-#       data/main_results/plots/fig9_bin5_LML.jpg
-#       data/main_results/plots/fig9_bin10_LML.jpg
+#       Plot/main_results/fig9_bin5_LML.jpg
+#       Plot/main_results/fig9_bin10_LML.jpg
 #
 # Description:
 #   This script recreate Figure 9: Log-multiplicative layer effects
