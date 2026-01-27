@@ -43,7 +43,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      RG4_generate_bin5_plots.R
 #
@@ -60,12 +60,12 @@ options(warn = -1)
 #   - Log file:
 #       code/_LOGS/Plot/robustness_check_plot_figG4_G6_log.txt
 #   - Plot:
-#       Plot/robustness_check/alternative_smoothing/figG4_bin5_OM.png
-#       Plot/robustness_check/alternative_smoothing/figG4_bin5_SM.png
-#       Plot/robustness_check/alternative_smoothing/figG4_bin5_EM.png
-#       Plot/robustness_check/alternative_smoothing/figG4_bin5_UP_DOWN.png
-#       Plot/robustness_check/alternative_smoothing/figG5_bin5_OM_by_t.png
-#       Plot/robustness_check/alternative_smoothing/figG6_bin5_AIM.png
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_OM.rds
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_SM.rds
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_EM.rds
+#       Plot/robustness_check/alternative_smoothing/figG4_bin5_UP_DOWN.rds
+#       Plot/robustness_check/alternative_smoothing/figG5_bin5_OM_by_t.rds
+#       Plot/robustness_check/alternative_smoothing/figG6_bin5_AIM.rds
 
 # Description:
 #   This script recreate Figure G4: Overall Mobility(t = 1), 
