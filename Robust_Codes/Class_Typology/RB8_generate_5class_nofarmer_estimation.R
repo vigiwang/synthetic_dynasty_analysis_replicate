@@ -45,25 +45,26 @@ options(warn = -1)
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class Nofarmer EGP):
-#       data/robust/class_typology/gss_fc_occ10_5class_nofarmer.rds
+#       Data/robustness_check/gss_fc_occ10_5class_nofarmer.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/synthetic_dynasty_estimation.R
+#       Functions/synthetic_dynasty_estimation.R
 #           (Markov-based mobility estimators and related calculations)
-#       _Functions/process_results.R
+#       Functions/process_results.R
 #           (post-processing of baseline and bootstrap results, including
 #            construction of bias-corrected estimators)
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/5class_nofarmer_estimation.txt
+#       code/_LOGS/Data/robustness_check_5class_nofarmer_estimation_log.txt
 #   - Estimation output:
-#       data/robust/class_typology/5class_nofarmer_bc.rds
+#       Data/robustness_check/5class_nofarmer_bc.rds
 #
 # Description:
-#   This script generates the robustness results using weighted father–child
-#   occupational mobility pairs constructed from the General Social Survey (GSS).
+#   This script generates the robustness results using  5-class father–child
+#   occupational mobility pairs(excluding farmers only) constructed from the 
+#   General Social Survey (GSS).
 #   The analysis restricts the sample to respondents born between 1945 and 1990
 #   and observed at ages 25–55 at the time of survey.
 #
