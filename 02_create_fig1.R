@@ -40,7 +40,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      02_create_fig1.R
 #
@@ -55,7 +55,7 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/plot/_LOGS/plot_fig1.txt
+#       code/_LOGS/main_results_plot_fig1_log.txt
 #   - Plot:
 #       Plot/main_results/fig1_father.pdf
 #       Plot/main_results/fig1_child.pdf
