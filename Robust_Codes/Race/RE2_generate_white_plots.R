@@ -42,37 +42,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R6b_create_figF1_12.R
+# Script:      RE2_generate_white_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/white_bc.rds
+#   - GSS white-only father–child occupational pairs (5-class EGP):
+#       Data/robustnes_check/white_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figF1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figF1_F4_log.txt
 #   - Plot:
-#       data/robust/plots/age/figF1_white_OM.png
-#       data/robust/plots/age/figF1_white_SM.png
-#       data/robust/plots/age/figF1_white_EM.png
-#       data/robust/plots/age/figF1_white_UP_DOWN.png
-#       data/robust/plots/age/figF2_white_OM_by_t.png
-#       data/robust/plots/age/figF3_white_AIM.png
-#       data/robust/plots/age/figF4_white_bin5_LML.png
+#       Plot/robustness_check/race/figF1_white_OM.rds
+#       Plot/robustness_check/race/figF1_white_SM.rds
+#       Plot/robustness_check/race/figF1_white_EM.rds
+#       Plot/robustness_check/race/figF1_white_UP_DOWN.rds
+#       Plot/robustness_check/race/figF2_white_OM_by_t.rds
+#       Plot/robustness_check/race/figF3_white_AIM.rds
+#       Plot/robustness_check/race/figF4_white_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure F1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure F2: Overall Mobility 
 #   across synthetic generations.in paper; Figure F3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure F4
+#   intergenerational memory at generation t = 1; Figure F4: Bin = 5 
+#   Log-multiplicative layer effect.
 #
 #-------------------------------------------------------------------------------
 
