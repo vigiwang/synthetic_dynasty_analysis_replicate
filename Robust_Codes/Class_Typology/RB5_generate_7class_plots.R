@@ -42,37 +42,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      RB5_create_figB5_B8.R
+# Script:      RB5_generate_7class_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/age/7class_bc.rds
+#   - Bias-corrected 7-class results:
+#       Data/robustness_check/7class_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figB5_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figB5_B8_log.txt
 #   - Plot:
-#       data/robust/plots/age/figB5_7class_OM.png
-#       data/robust/plots/age/figB5_7class_SM.png
-#       data/robust/plots/age/figB5_7class_EM.png
-#       data/robust/plots/age/figB5_7class_UP_DOWN.png
-#       data/robust/plots/age/figB6_7class_OM_by_t.png
-#       data/robust/plots/age/figB7_7class_AIM.png
-#       data/robust/plots/age/figB8_7class_bin5_LML.png
+#       Plot/robustness_check/class_typology/figB5_7class_OM.png
+#       Plot/robustness_check/class_typology/figB5_7class_SM.png
+#       Plot/robustness_check/class_typology/figB5_7class_EM.png
+#       Plot/robustness_check/class_typology/figB5_7class_UP_DOWN.png
+#       Plot/robustness_check/class_typology/figB6_7class_OM_by_t.png
+#       Plot/robustness_check/class_typology/figB7_7class_AIM.png
+#       Plot/robustness_check/class_typology/figB8_7class_bin5_LML.png
 
 # Description:
 #   This script recreate Figure B5: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure B6: Overall Mobility 
 #   across synthetic generations.in paper; Figure B7: Aggregate 
-#   intergenerational memory at generation t = 1; Figure B8:
+#   intergenerational memory at generation t = 1; Figure B8: Bin = 5
+#    Log-multiplicative layer effect.
 #
 #-------------------------------------------------------------------------------
 
