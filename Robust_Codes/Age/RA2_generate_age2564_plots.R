@@ -44,35 +44,38 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R1b_create_figA1_4.R
+# Script:      RA2_generate_age2564_plots.R
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/age/age2564_bc.rds
+#       Data/main_results/gss_fc_occ10_5class.rds
+#   - GSS father–child age 25-64 bias-corrected estimation:
+#       Data/robustness_check/age2564_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
-#   - Log file:
-#       code/main_results/_LOGS/plot_figA1.txt
+#   - _LOGS:
+#      code/_LOGS/Plot/robustness_check_plot_figA1_A4_log.txt
 #   - Plot:
-#       data/robust/plots/age/figA1_2564_OM.png
-#       data/robust/plots/age/figA1_2564_SM.png
-#       data/robust/plots/age/figA1_2564_EM.png
-#       data/robust/plots/age/figA1_2564_UP_DOWN.png
-#       data/robust/plots/age/figA2_2564_OM_by_t.png
-#       data/robust/plots/age/figA3_2564_AIM.png
-#       data/robust/plots/age/figA4_2564_bin5_LML.png
+#       Plot/robustness_check/age/figA1_2564_OM.rds
+#       Plot/robustness_check/age/figA1_2564_SM.rds
+#       Plot/robustness_check/age/figA1_2564_EM.rds
+#       Plot/robustness_check/age/figA1_2564_UP_DOWN.rds
+#       Plot/robustness_check/age/figA2_2564_OM_by_t.rds
+#       Plot/robustness_check/age/figA3_2564_AIM.rds
+#       Plot/robustness_check/age/figA4_2564_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure A1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure A2: Overall Mobility 
 #   across synthetic generations.in paper; Figure A3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure A4:
+#   intergenerational memory at generation t = 1; Figure A4:Log-multiplicative 
+#   layer effects computed from samples of respondents age 25-64.
 #
 #-------------------------------------------------------------------------------
 
