@@ -42,7 +42,7 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R7a_generate_raw_estimation.R
+# Script:      RG1_generate_raw_estimation.R
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
