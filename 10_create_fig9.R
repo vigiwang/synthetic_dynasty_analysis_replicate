@@ -63,8 +63,7 @@ options(warn = -1)
 #       data/main_results/plots/fig9_bin10_LML.jpg
 #
 # Description:
-#   This script recreate Figure 9: Intergenerational memory at generation t = 1 
-#   by class.
+#   This script recreate Figure 9: Log-multiplicative layer effects
 #-------------------------------------------------------------------------------
 
 
