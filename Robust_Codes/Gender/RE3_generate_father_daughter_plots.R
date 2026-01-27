@@ -44,36 +44,36 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R2b_create_figE1_4.R
+# Script:      RE3_generate_father_daughter_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_fd_bc.rds
+#   - GSS father–daughter occupational pairs (5-class EGP):
+#       Data/robustness_check/5class_fd_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figE1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figE1_E4_log.txt
 #   - Plot:
-#       data/robust/plots/age/figE1_fd_OM.png
-#       data/robust/plots/age/figE1_fd_SM.png
-#       data/robust/plots/age/figE1_fd_EM.png
-#       data/robust/plots/age/figE1_fd_UP_DOWN.png
-#       data/robust/plots/age/figE2_fd_OM_by_t.png
-#       data/robust/plots/age/figE3_fd_AIM.png
-#       data/robust/plots/age/figE4_fd_bin5_LML.png
+#       Plot/robustness_check/gender/figE1_fd_OM.rds
+#       Plot/robustness_check/gender/figE1_fd_SM.rds
+#       Plot/robustness_check/gender/figE1_fd_EM.rds
+#       Plot/robustness_check/gender/figE1_fd_UP_DOWN.rds
+#       Plot/robustness_check/gender/figE2_fd_OM_by_t.rds
+#       Plot/robustness_check/gender/figE3_fd_AIM.rds
+#       Plot/robustness_check/gender/figE4_fd_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure E1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure E2: Overall Mobility 
 #   across synthetic generations.in paper; Figure E3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure E4:
-#
+#   intergenerational memory at generation t = 1; Figure E4: Log-multiplicave
+#   Layer effect.
 #-------------------------------------------------------------------------------
 
 
