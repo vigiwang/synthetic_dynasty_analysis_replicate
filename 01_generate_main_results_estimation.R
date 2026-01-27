@@ -44,13 +44,13 @@ options(warn = -1)
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/main_results/raw/gss_fc_occ10_5class.rds
+#       Data/main_results/gss_fc_occ10_5class.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/synthetic_dynasty_estimation.R
+#       Functions/synthetic_dynasty_estimation.R
 #           (Markov-based mobility estimators and related calculations)
-#       _Functions/process_results.R
+#       Functions/process_results.R
 #           (post-processing of baseline and bootstrap results, including
 #            construction of bias-corrected estimators)
 #
@@ -58,8 +58,8 @@ options(warn = -1)
 #   - Log file:
 #       code/main_results/_LOGS/estimation.txt
 #   - Estimation output:
-#       data/main_results/estimation/main_rst_bc.rds
-#       data/main_results/estimation/main_rst_baseline.rds
+#       Data/main_results/main_rst_bc.rds
+#       Data/main_results/main_rst_baseline.rds
 #
 # Description:
 #   This script generates the main estimation results using father–child
