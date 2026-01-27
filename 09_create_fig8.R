@@ -43,7 +43,7 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      09_create_fig8.R
 #
@@ -58,12 +58,12 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_fig8.txt
+#       code/_LOGS/Plot/main_results_plot_fig8_log.txt
 #   - Plot:
-#       Plot/main_results/fig8_IM_1945_t.jpg
-#       Plot/main_results/fig8_IM_1990_t.jpg
-#       Plot/main_results/fig8_AIM_1945_t.jpg
-#       Plot/main_results/fig8_AIM_1990_t.jpg
+#       Plot/main_results/fig8_IM_1945_t.rds
+#       Plot/main_results/fig8_IM_1990_t.rds
+#       Plot/main_results/fig8_AIM_1945_t.rds
+#       Plot/main_results/fig8_AIM_1990_t.rds
 #
 # Description:
 #   This script recreate Figure 8: Memory across synthetic generations in the 1945 and 1990 
