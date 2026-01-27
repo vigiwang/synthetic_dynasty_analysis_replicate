@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "gender"
-title <- "figE5_E8"
+title <- "plot_figE5_E8"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -47,33 +47,33 @@ options(warn = -1)
 # Script:      R2b_create_figE5_8.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_fs_bc.rds
+#   - Father-son bias-corrected results:
+#       Data/robustness_check/5class_fs_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figE1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figE5_E8_log.txt
 #   - Plot:
-#       data/robust/plots/age/figE5_fs_OM.png
-#       data/robust/plots/age/figE5_fs_SM.png
-#       data/robust/plots/age/figE5_fs_EM.png
-#       data/robust/plots/age/figE5_fs_UP_DOWN.png
-#       data/robust/plots/age/figE6_fs_OM_by_t.png
-#       data/robust/plots/age/figE7_fs_AIM.png
-#       data/robust/plots/age/figE8_fs_bin5_LML.png
+#       Plot/robustness_check/gender/figE5_fs_OM.rds
+#       Plot/robustness_check/gender/figE5_fs_SM.rds
+#       Plot/robustness_check/gender/figE5_fs_EM.rds
+#       Plot/robustness_check/gender/figE5_fs_UP_DOWN.rds
+#       Plot/robustness_check/gender/figE6_fs_OM_by_t.rds
+#       Plot/robustness_check/gender/figE7_fs_AIM.rds
+#       Plot/robustness_check/gender/figE8_fs_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure E5: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure E6: Overall Mobility 
 #   across synthetic generations.in paper; Figure E7: Aggregate 
-#   intergenerational memory at generation t = 1; Figure E8:
-#
+#   intergenerational memory at generation t = 1; Figure E8: Bin = 5
+#   Log-multiplicative Layer effect.
 #-------------------------------------------------------------------------------
 
 
