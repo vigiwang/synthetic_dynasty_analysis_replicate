@@ -43,35 +43,35 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R6b_create_figG1_G3.R
+# Script:      RG6_generate_bin10_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/bin10_bc.rds
+#   - Bin width = 10 Bias-corrected Results:
+#       Data/robustness_check/bin10_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figG1_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figG1_G3_log.txt
 #   - Plot:
-#       data/robust/plots/age/figG1_bin10_OM.png
-#       data/robust/plots/age/figG1_bin10_SM.png
-#       data/robust/plots/age/figG1_bin10_EM.png
-#       data/robust/plots/age/figG1_bin10_UP_DOWN.png
-#       data/robust/plots/age/figG2_bin10_OM_by_t.png
-#       data/robust/plots/age/figG3_bin10_AIM.png
+#       Plot/robustness_check/alternative_smoothing/figG1_bin10_OM.rds
+#       Plot/robustness_check/alternative_smoothing/figG1_bin10_SM.rds
+#       Plot/robustness_check/alternative_smoothing/figG1_bin10_EM.rds
+#       Plot/robustness_check/alternative_smoothing/figG1_bin10_UP_DOWN.rds
+#       Plot/robustness_check/alternative_smoothing/figG2_bin10_OM_by_t.rds
+#       Plot/robustness_check/alternative_smoothing/figG3_bin10_AIM.rds
 
 # Description:
 #   This script recreate Figure G1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure G2: Overall Mobility 
-#   across synthetic generations.in paper; Figure FG: Aggregate 
+#   across synthetic generations.in paper; Figure G3: Aggregate 
 #   intergenerational memory at generation t = 1; 
 #
 #-------------------------------------------------------------------------------
