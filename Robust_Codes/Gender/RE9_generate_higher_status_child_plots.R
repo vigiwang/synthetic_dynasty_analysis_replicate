@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "gender"
-title <- "figE13_E16"
+title <- "plot_figE13_E16"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -42,38 +42,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R2b_create_figE13_12.R
+# Script:      RE9_generate_higher_status_child_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_pc_bc.rds
+#   - Higher-status parent bias-corrected estimation:
+#       Data/robustness_check/5class_pc_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figE13_16.txt
+#       code/_LOGS/plot/probustness_check_plot_figE13_E16_log.txt
 #   - Plot:
-#       data/robust/plots/age/figE13_pc_OM.png
-#       data/robust/plots/age/figE13_pc_SM.png
-#       data/robust/plots/age/figE13_pc_EM.png
-#       data/robust/plots/age/figE13_pc_UP_DOWN.png
-#       data/robust/plots/age/figE14_pc_OM_by_t.png
-#       data/robust/plots/age/figE15_pc_AIM.png
-#       data/robust/plots/age/figE16_pc_bin5_LML.png
+#       Plot/robustness_check/gender/figE13_pc_OM.rds
+#       Plot/robustness_check/gender/figE13_pc_SM.rds
+#       Plot/robustness_check/gender/figE13_pc_EM.rds
+#       Plot/robustness_check/gender/figE13_pc_UP_DOWN.rds
+#       Plot/robustness_check/gender/figE14_pc_OM_by_t.rds
+#       Plot/robustness_check/gender/figE15_pc_AIM.rds
+#       Plot/robustness_check/gender/figE16_pc_bin5_LML.rds
 
 # Description:
 #   This script recreate Figure E13: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure E14: Overall Mobility 
 #   across synthetic generations.in paper; Figure E15: Aggregate 
-#   intergenerational memory at generation t = 1; Figure E16
-#
+#   intergenerational memory at generation t = 1; Figure E16: Log-multiplicative 
+#   layer-effect.
 #-------------------------------------------------------------------------------
 
 
