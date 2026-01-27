@@ -39,30 +39,30 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
-# Script:      R5c_generate_higher_status_child_estimation.R
+# Script:      RE8_generate_higher_status_child_estimation.R
 #
 # Inputs:
-#   - GSS mother–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/gss_pc_occ10_5class.rds
+#   - GSS higher status-parent–child occupational pairs (5-class EGP):
+#       Data/robustness_check/gss_pc_occ10_5class.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/synthetic_dynasty_estimation.R
+#       Functions/synthetic_dynasty_estimation.R
 #           (Markov-based mobility estimators and related calculations)
-#       _Functions/process_results.R
+#       Functions/process_results.R
 #           (post-processing of baseline and bootstrap results, including
 #            construction of bias-corrected estimators)
 #
 # Outputs:
 #   - Log file:
-#       code/robust/_LOGS/higher_status_child_estimation.txt
+#       code/_LOGS/Data/robustness_check_higher_status_child_estimation_log.txt
 #   - Estimation output:
-#       data/robust/class_typology/higher_status_child_bc.rds
+#       Data/robustness_check/5class_pc_bc.rds
 #
 # Description:
-#   This script generates the robustness results using weighted father–child
+#   This script generates the robustness results using higher-status parent–child
 #   occupational mobility pairs constructed from the General Social Survey (GSS).
 #   The analysis restricts the sample to respondents born between 1945 and 1990
 #   and observed at ages 25–55 at the time of survey.
