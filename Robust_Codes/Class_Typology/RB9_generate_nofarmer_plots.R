@@ -43,38 +43,38 @@ options(warn = -1)
 # U.S. Occupational Mobility — Replication Files
 #
 # Project:     U.S. Occupational Mobility Analysis
-# Repository:  https://github.com/synthetic_dynasty_analysis
+# Repository:  https://github.com/synthetic_dynasty_analysis_replicate
 #
 # Script:      RB9_generate_nofarmer_plots.R
 #
 # Inputs:
-#   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/5class_nofarmer_bc.rds
+#   - 5-class EGP without farmers bias-corrected results:
+#       Data/robustness_check/5class_nofarmer_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figB9_4.txt
+#       code/_LOGS/Plot/robustness_check_plot_figB9_B12_log.txt
 #   - Plot:
-#       data/robust/plots/age/figB9_nofarmer_OM.png
-#       data/robust/plots/age/figB9_nofarmer_SM.png
-#       data/robust/plots/age/figB9_nofarmer_EM.png
-#       data/robust/plots/age/figB9_nofarmer_UP_DOWN.png
-#       data/robust/plots/age/figB10_nofarmer_OM_by_t.png
-#       data/robust/plots/age/figB11_nofarmer_AIM.png
-#       data/robust/plots/age/figB12_nofarmer_bin5_LML.png
+#       Plot/robustness_check/class_typology/figB9_nofarmer_OM.png
+#       Plot/robustness_check/class_typology/figB9_nofarmer_SM.png
+#       Plot/robustness_check/class_typology/figB9_nofarmer_EM.png
+#       Plot/robustness_check/class_typology/figB9_nofarmer_UP_DOWN.png
+#       Plot/robustness_check/class_typology/figB10_nofarmer_OM_by_t.png
+#       Plot/robustness_check/class_typology/figB11_nofarmer_AIM.png
+#       Plot/robustness_check/class_typology/figB12_nofarmer_bin5_LML.png
 
 # Description:
 #   This script recreate Figure B9: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
 #   Upward-Downward Mobility(t = 1); Figure B10: Overall Mobility 
 #   across synthetic generations.in paper; Figure B11: Aggregate 
-#   intergenerational memory at generation t = 1; Figure B12:
-#
+#   intergenerational memory at generation t = 1; Figure B12: Bin = 5
+#   Log-multiplicative layer effect.
 #-------------------------------------------------------------------------------
 
 
