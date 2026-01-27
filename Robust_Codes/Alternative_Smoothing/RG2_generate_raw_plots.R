@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "alternative_smoothing"
-title <- "ploy_figG7_G9"
+title <- "plot_figG7_G9"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -45,27 +45,27 @@ options(warn = -1)
 # Project:     U.S. Occupational Mobility Analysis
 # Repository:  https://github.com/synthetic_dynasty_analysis
 #
-# Script:      R6b_create_figG7_9.R
+# Script:      RG2_generate_raw_plots.R
 #
 # Inputs:
 #   - GSS father–child occupational pairs (5-class EGP):
-#       data/robust/class_typology/bin5_bc.rds
+#       Data/robustness_check/raw_bc.rds
 #   - Helper functions:
-#       _Functions/utils.R
+#       Functions/utils.R
 #           (general-purpose helper functions used throughout the analysis)
-#       _Functions/plot.R
+#       Functions/plot.R
 #           (codes used to process data and draw plots)
 #
 # Outputs:
 #   - Log file:
-#       code/main_results/_LOGS/plot_figG7_9.txt
+#       code/_LOGS/Plot/robustness_check_plot_figG7_G9_log.txt
 #   - Plot:
-#       data/robust/plots/age/figG7_raw_OM.png
-#       data/robust/plots/age/figG7_raw_SM.png
-#       data/robust/plots/age/figG7_raw_EM.png
-#       data/robust/plots/age/figG7_raw_UP_DOWN.png
-#       data/robust/plots/age/figG5_raw_OM_by_t.png
-#       data/robust/plots/age/figG6_raw_AIM.png
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_OM.png
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_SM.png
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_EM.png
+#       Plot/robustness_check/alternative_smoothing/figG7_raw_UP_DOWN.png
+#       Plot/robustness_check/alternative_smoothing/figG8_raw_OM_by_t.png
+#       Plot/robustness_check/alternative_smoothing/figG9_raw_AIM.png
 
 # Description:
 #   This script recreate Figure G7: Overall Mobility(t = 1), 
