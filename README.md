@@ -64,17 +64,7 @@ This project relies on two external data sources:
 
 The files included in this repository are sufficient to reproduce:
 
-* All **baseline estimation results**
-* On a standard desktop or laptop environment
-
-To replicate the main results, run the master scripts in order:
-
-* `master_main_results.R`
-* `master_robust_ABCD.R`
-* `master_robust_EFGH.R`
-
-
-Typical runtime is approximately **2–4 hours per major estimation block**, depending on hardware.
+* All **baseline estimation results** for benchmark analysis and robustness check.
 
 ---
 
@@ -88,6 +78,16 @@ A sample SLURM-compatible submission script is provided:
 * `sample.sh`
 
 This file includes suggested settings for memory, CPU cores, and runtime.
+
+To replicate the main results, run the master scripts in order:
+
+* `master_main_results.R`
+* `master_robust_ABCD.R`
+* `master_robust_EFGH.R`
+
+
+Typical runtime is approximately **2–4 hours per major estimation block**, depending on hardware.
+
 
 ---
 
