@@ -19,6 +19,12 @@ print("Age 30-64 Robustness Check Estimation Finished!")
 source("Robust_Codes/Age/RA4_generate_age3064_plots.R")
 print("Age 30-64 Robustness Check Plots Generation Finished!")
 
+source("Robust_Codes/Age/RA5_generate_age3040_estimation.R")
+print("Age 30-40 Robustness Check Estimation Finished!")
+
+source("Robust_Codes/Age/RA6_generate_age3040_plot.R")
+print("Age 30-40 Robustness Check Plots Generation Finished!")
+
 source("Robust_Codes/Class_Typology/RB1_generate_class_typology_data.R")
 print("Alternative Class Typology Data Generation Finished!")
 
