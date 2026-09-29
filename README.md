@@ -142,7 +142,7 @@ Typical runtime is approximately **2–4 hours per major estimation block**, dep
 * The bulk of the computational implementation in this repository — including the maternal-role and educational-mobility robustness pipelines, the NLSY replication package, and the sparsity perturbation analysis — was developed with the assistance of **Claude Fable 5** (Anthropic).
 * Some plotting functions were developed with reference to outputs generated using **ChatGPT-4o**.
 * Functions related to **Hellinger’s dependence measure** are adapted from code provided by **Prof. Thomas Coleman**, whom the authors thank for introducing valuable perspectives on dependence measures.
-* The authors thank **Luke Kushner** for his help with the NLSY occupational crosswalk.
+* The authors thank **Luke Kushner** for his help with the NLSY data.
 
 ---
 
