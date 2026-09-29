@@ -81,8 +81,8 @@ This file includes suggested settings for memory, CPU cores, and runtime.
 To replicate the main results, run the master scripts in order:
 
 * `master_main_results.R`
-* `master_robust_ABCD.R`
-* `master_robust_EFGH.R`
+* `master_robust_ABCE.R`
+* `master_robust_FGHJ.R`
 
 
 Typical runtime is approximately **2–4 hours per major estimation block**, depending on hardware.
