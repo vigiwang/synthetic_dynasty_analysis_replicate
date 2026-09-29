@@ -95,6 +95,13 @@ This project relies on the following external data sources:
   Download the folder and place its contents under `Data/NLSY/` before running the NLSY pipeline.
   The underlying extracts originate from the [NLS Investigator](https://www.nlsinfo.org/investigator/) (public-use data); custom weights were produced by the NLS custom weighting service.
 
+* **Intermediate main-results estimates (for exact reproducibility)**
+  Although the full pipeline is seed-controlled, small numerical differences across computing environments (e.g., BLAS/OS floating-point variation on HPC systems) can prevent byte-exact reproduction of downstream tables and figures. To guarantee exact reproducibility, the authors also provide the intermediate estimation results used in the paper — `main_rst_baseline.rds`, `main_rst_boot.rds`, `main_rst_bc.rds`, and the analysis sample `gss_fc_occ10_5class.rds` — at:
+
+  [https://www.dropbox.com/scl/fo/1pwccchpxg1pdtaf988dr/AOtzjzcbigbAVAYUb_xevEs?rlkey=banzdnevqw63t8bbfen4ne1hf&st=y7xaedxo&dl=0](https://www.dropbox.com/scl/fo/1pwccchpxg1pdtaf988dr/AOtzjzcbigbAVAYUb_xevEs?rlkey=banzdnevqw63t8bbfen4ne1hf&st=y7xaedxo&dl=0)
+
+  Download the folder and place its contents under `Data/main_results/`. These files are consumed by the main-results figure scripts, the sparsity perturbation analysis (Appendix K, whose benchmark checks reference exactly this vintage), and the NLSY pipeline's GSS comparison overlays (Appendix I). Users who prefer to regenerate them from scratch can instead run `master_main_results.R` first.
+
 ---
 
 ## Reproducing Baseline Results Locally
@@ -123,7 +130,7 @@ To replicate the full set of results, run the master scripts:
 * `master_robust_FGHJ.R` — Appendices F (gender), G (race), H (smoothing), and J (extended cohorts)
 * `master_mother_role_estimation.R` — maternal-role analyses in Appendix F (mother–son/daughter occupational pairs and the educational-attainment extension)
 * `master_nlsy_pipeline.R` — Appendix I (NLSY income and occupational mobility; requires the NLSY data from the Dropbox link above)
-* `master_perturbation.R` — Appendix K (sparsity perturbation analysis)
+* `master_perturbation.R` — Appendix K (sparsity perturbation analysis; requires the intermediate main-results estimates from the Dropbox link above, or a completed `master_main_results.R` run)
 
 Typical runtime is approximately **2–4 hours per major estimation block**, depending on hardware.
 
