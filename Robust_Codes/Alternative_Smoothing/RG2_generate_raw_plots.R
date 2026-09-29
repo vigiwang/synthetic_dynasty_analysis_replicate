@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "alternative_smoothing"
-title <- "plot_figG7_G9"
+title <- "plot_figH7_H9"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -58,20 +58,20 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/_LOGS/Plot/robustness_check_plot_figG7_G9_log.txt
+#       code/_LOGS/Plot/robustness_check_plot_figH7_H9_log.txt
 #   - Plot:
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_OM.rds
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_SM.rds
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_EM.rds
-#       Plot/robustness_check/alternative_smoothing/figG7_raw_UP_DOWN.rds
-#       Plot/robustness_check/alternative_smoothing/figG8_raw_OM_by_t.rds
-#       Plot/robustness_check/alternative_smoothing/figG9_raw_AIM.rds
+#       Plot/robustness_check/alternative_smoothing/figH7_raw_OM.rds
+#       Plot/robustness_check/alternative_smoothing/figH7_raw_SM.rds
+#       Plot/robustness_check/alternative_smoothing/figH7_raw_EM.rds
+#       Plot/robustness_check/alternative_smoothing/figH7_raw_UP_DOWN.rds
+#       Plot/robustness_check/alternative_smoothing/figH8_raw_OM_by_t.rds
+#       Plot/robustness_check/alternative_smoothing/figH9_raw_AIM.rds
 
 # Description:
-#   This script recreate Figure G7: Overall Mobility(t = 1), 
+#   This script recreate Figure H7: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
-#   Upward-Downward Mobility(t = 1); Figure G8: Overall Mobility 
-#   across synthetic generations.in paper; Figure G9: Aggregate 
+#   Upward-Downward Mobility(t = 1); Figure H8: Overall Mobility 
+#   across synthetic generations.in paper; Figure H9: Aggregate 
 #   intergenerational memory at generation t = 1; 
 #
 #-------------------------------------------------------------------------------
@@ -327,7 +327,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG7_raw_UP_DOWN.rds"
+      "figH7_raw_UP_DOWN.rds"
     )
   )
 )
@@ -337,7 +337,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG7_raw_OM.rds"
+      "figH7_raw_OM.rds"
     )
   )
 )
@@ -347,7 +347,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG7_raw_SM.rds"
+      "figH7_raw_SM.rds"
     )
   )
 )
@@ -357,7 +357,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG7_raw_EM.rds"
+      "figH7_raw_EM.rds"
     )
   )
 )
@@ -367,7 +367,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG8_raw_OM_by_t.rds"
+      "figH8_raw_OM_by_t.rds"
     )
   )
 )
@@ -377,7 +377,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG9_raw_AIM.rds"
+      "figH9_raw_AIM.rds"
     )
   )
 )
@@ -386,7 +386,7 @@ saveRDS(
 sink(log_path, split = TRUE)
 
 cat("Saved plots to: ", dir_plot ,"\n")
-cat("Figure G7-G9 have been successfully replicated.\n")
+cat("Figure H7-G9 have been successfully replicated.\n")
 
 sink()
 

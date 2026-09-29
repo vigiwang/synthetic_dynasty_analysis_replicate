@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "alternative_smoothing"
-title <- "plot_figG1_G3"
+title <- "plot_figH1_H3"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -58,20 +58,20 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/_LOGS/Plot/robustness_check_plot_figG1_G3_log.txt
+#       code/_LOGS/Plot/robustness_check_plot_figH1_H3_log.txt
 #   - Plot:
-#       Plot/robustness_check/alternative_smoothing/figG1_bin10_OM.rds
-#       Plot/robustness_check/alternative_smoothing/figG1_bin10_SM.rds
-#       Plot/robustness_check/alternative_smoothing/figG1_bin10_EM.rds
-#       Plot/robustness_check/alternative_smoothing/figG1_bin10_UP_DOWN.rds
-#       Plot/robustness_check/alternative_smoothing/figG2_bin10_OM_by_t.rds
-#       Plot/robustness_check/alternative_smoothing/figG3_bin10_AIM.rds
+#       Plot/robustness_check/alternative_smoothing/figH1_bin10_OM.rds
+#       Plot/robustness_check/alternative_smoothing/figH1_bin10_SM.rds
+#       Plot/robustness_check/alternative_smoothing/figH1_bin10_EM.rds
+#       Plot/robustness_check/alternative_smoothing/figH1_bin10_UP_DOWN.rds
+#       Plot/robustness_check/alternative_smoothing/figH2_bin10_OM_by_t.rds
+#       Plot/robustness_check/alternative_smoothing/figH3_bin10_AIM.rds
 
 # Description:
-#   This script recreate Figure G1: Overall Mobility(t = 1), 
+#   This script recreate Figure H1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
-#   Upward-Downward Mobility(t = 1); Figure G2: Overall Mobility 
-#   across synthetic generations.in paper; Figure G3: Aggregate 
+#   Upward-Downward Mobility(t = 1); Figure H2: Overall Mobility 
+#   across synthetic generations.in paper; Figure H3: Aggregate 
 #   intergenerational memory at generation t = 1; 
 #
 #-------------------------------------------------------------------------------
@@ -326,7 +326,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG1_bin10_UP_DOWN.rds"
+      "figH1_bin10_UP_DOWN.rds"
     )
   )
 )
@@ -336,7 +336,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG1_bin10_OM.rds"
+      "figH1_bin10_OM.rds"
     )
   )
 )
@@ -346,7 +346,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG1_bin10_SM.rds"
+      "figH1_bin10_SM.rds"
     )
   )
 )
@@ -356,7 +356,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG1_bin10_EM.rds"
+      "figH1_bin10_EM.rds"
     )
   )
 )
@@ -366,7 +366,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG2_bin10_OM_by_t.rds"
+      "figH2_bin10_OM_by_t.rds"
     )
   )
 )
@@ -376,7 +376,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figG3_bin10_AIM.rds"
+      "figH3_bin10_AIM.rds"
     )
   )
 )
@@ -385,7 +385,7 @@ saveRDS(
 sink(log_path, split = TRUE)
 
 cat("Saved plots to: ", dir_plot ,"\n")
-cat("Figure G1-G3 have been successfully replicated.\n")
+cat("Figure H1-G3 have been successfully replicated.\n")
 
 sink()
 

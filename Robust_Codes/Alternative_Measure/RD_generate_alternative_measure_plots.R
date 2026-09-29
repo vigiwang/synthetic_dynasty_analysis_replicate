@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "alternative_measures"
-title <- "plot_figD1_D4"
+title <- "plot_figE1_E5"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -60,20 +60,20 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/_LOGS/Plot/robustness_check_plot_figD1_D4_log.txt
+#       code/_LOGS/Plot/robustness_check_plot_figE1_E5_log.txt
 #   - Plot:
-#       Plot/robustness_check/alternative_measure/figD1_outflow_t1.rds
-#       Plot/robustness_check/alternative_measure/figD1_outflow_ss.rds
-#       Plot/robustness_check/alternative_measure/figD2_MFPT.rds
-#       Plot/robustness_check/alternative_measure/figD3_dt.rds
-#       Plot/robustness_check/alternative_measure/figD3_lambda2.rds
-#       Plot/robustness_check/alternative_measure/figD4_altham_index.rds
-#       Plot/robustness_check/alternative_measure/figD4_HD.rds
+#       Plot/robustness_check/alternative_measure/figE1_outflow_t1.rds
+#       Plot/robustness_check/alternative_measure/figE1_outflow_ss.rds
+#       Plot/robustness_check/alternative_measure/figE2_MFPT.rds
+#       Plot/robustness_check/alternative_measure/figE3_dprime_t.rds
+#       Plot/robustness_check/alternative_measure/figE3_lambda2.rds
+#       Plot/robustness_check/alternative_measure/figE4_altham_index.rds
+#       Plot/robustness_check/alternative_measure/figE5_HD.rds
 #
 # Description:
-#   This script recreate Figure D1: Class outflows at generation t = 1 
-#   and at the steady state; Figure D2: Mean first passage time; Figure D3:
-#   Alternative measures of memory; Figure D4:Alternative measures of dependence.
+#   This script recreate Figure E1: Class outflows at generation t = 1 
+#   and at the steady state; Figure E2: Mean first passage time; Figure E3:
+#   Alternative measures of memory; Figure E4:Alternative measures of dependence.
 #-------------------------------------------------------------------------------
 
 
@@ -615,7 +615,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD1_outflow_initial.rds"
+      "figE1_outflow_initial.rds"
     )
   )
 )
@@ -626,7 +626,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD1_outflow_ss.rds"
+      "figE1_outflow_ss.rds"
     )
   )
 )
@@ -635,7 +635,7 @@ saveRDS(
 ggsave(
   filename = file.path(
     dir_plot,
-    "figD2_MFPT.pdf"
+    "figE2_MFPT.pdf"
   ),
   plot     = MFP_updown_new,
   width    = 17,
@@ -651,7 +651,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD3_dprime_t.rds"
+      "figE3_dprime_t.rds"
     )
   )
 )
@@ -662,7 +662,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD3_lambda2.rds"
+      "figE3_lambda2.rds"
     )
   )
 )
@@ -673,7 +673,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD4_altham_index.rds"
+      "figE4_altham_index.rds"
     )
   )
 )
@@ -684,7 +684,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figD4_HD.rds"
+      "figE5_HD.rds"
     )
   )
 )
@@ -692,6 +692,6 @@ saveRDS(
 sink(log_path, split = TRUE)
 
 cat("Saved plots to: ", dir_plot ,"\n")
-cat("Figure D1-D4 of the paper’s main results have been successfully replicated.\n")
+cat("Figure E1-D4 of the paper’s main results have been successfully replicated.\n")
 
 sink()

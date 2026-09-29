@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "race"
-title <- "plot_figF1_F4"
+title <- "plot_figG1_G4"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -57,22 +57,22 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/_LOGS/Plot/robustness_check_plot_figF1_F4_log.txt
+#       code/_LOGS/Plot/robustness_check_plot_figG1_G4_log.txt
 #   - Plot:
-#       Plot/robustness_check/race/figF1_white_OM.rds
-#       Plot/robustness_check/race/figF1_white_SM.rds
-#       Plot/robustness_check/race/figF1_white_EM.rds
-#       Plot/robustness_check/race/figF1_white_UP_DOWN.rds
-#       Plot/robustness_check/race/figF2_white_OM_by_t.rds
-#       Plot/robustness_check/race/figF3_white_AIM.rds
-#       Plot/robustness_check/race/figF4_white_bin5_LML.rds
+#       Plot/robustness_check/race/figG1_white_OM.rds
+#       Plot/robustness_check/race/figG1_white_SM.rds
+#       Plot/robustness_check/race/figG1_white_EM.rds
+#       Plot/robustness_check/race/figG1_white_UP_DOWN.rds
+#       Plot/robustness_check/race/figG2_white_OM_by_t.rds
+#       Plot/robustness_check/race/figG3_white_AIM.rds
+#       Plot/robustness_check/race/figG4_white_bin5_LML.rds
 
 # Description:
-#   This script recreate Figure F1: Overall Mobility(t = 1), 
+#   This script recreate Figure G1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
-#   Upward-Downward Mobility(t = 1); Figure F2: Overall Mobility 
-#   across synthetic generations.in paper; Figure F3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure F4: Bin = 5 
+#   Upward-Downward Mobility(t = 1); Figure G2: Overall Mobility 
+#   across synthetic generations.in paper; Figure G3: Aggregate 
+#   intergenerational memory at generation t = 1; Figure G4: Bin = 5 
 #   Log-multiplicative layer effect.
 #
 #-------------------------------------------------------------------------------
@@ -357,7 +357,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF1_white_UP_DOWN.rds"
+      "figG1_white_UP_DOWN.rds"
     )
   )
 )
@@ -367,7 +367,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF1_white_OM.rds"
+      "figG1_white_OM.rds"
     )
   )
 )
@@ -377,7 +377,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF1_white_SM.rds"
+      "figG1_white_SM.rds"
     )
   )
 )
@@ -387,7 +387,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF1_white_EM.rds"
+      "figG1_white_EM.rds"
     )
   )
 )
@@ -397,7 +397,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF2_white_OM_by_t.rds"
+      "figG2_white_OM_by_t.rds"
     )
   )
 )
@@ -407,7 +407,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF3_white_AIM.rds"
+      "figG3_white_AIM.rds"
     )
   )
 )
@@ -417,7 +417,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figF4_white_bin5_LML.rds"
+      "figG4_white_bin5_LML.rds"
     )
   )
 )
@@ -426,7 +426,7 @@ saveRDS(
 sink(log_path, split = TRUE)
 
 cat("Saved plots to: ", dir_plot ,"\n")
-cat("Figure F1-F4 have been successfully replicated.\n")
+cat("Figure G1-F4 have been successfully replicated.\n")
 
 sink()
 

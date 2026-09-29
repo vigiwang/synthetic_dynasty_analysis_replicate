@@ -3,7 +3,7 @@ rm(list = ls())
 section <- "Plot"
 subsection <- "robustness_check"
 subsubsection <- "extended_cohorts"
-title <- "plot_figH1_H4"
+title <- "plot_figJ1_J4"
 
 HPC <- TRUE # Set False if you wish to run locally and test the baseline results
 
@@ -58,22 +58,22 @@ options(warn = -1)
 #
 # Outputs:
 #   - Log file:
-#       code/_LOGS/Plot/robustness_check_plot_figH1_H4_log.txt
+#       code/_LOGS/Plot/robustness_check_plot_figJ1_J4_log.txt
 #   - Plot:
-#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_OM.rds
-#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_SM.rds
-#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_EM.rds
-#       Plot/robustness_check/extended_cohorts/figH1_extended_cohorts_UP_DOWN.rds
-#       Plot/robustness_check/extended_cohorts/figH2_extended_cohorts_OM_by_t.rds
-#       Plot/robustness_check/extended_cohorts/figH3_extended_cohorts_AIM.rds
-#       Plot/robustness_check/extended_cohorts/figH4_extended_cohorts_bin5_LML.rds
+#       Plot/robustness_check/extended_cohorts/figJ1_extended_cohorts_OM.rds
+#       Plot/robustness_check/extended_cohorts/figJ1_extended_cohorts_SM.rds
+#       Plot/robustness_check/extended_cohorts/figJ1_extended_cohorts_EM.rds
+#       Plot/robustness_check/extended_cohorts/figJ1_extended_cohorts_UP_DOWN.rds
+#       Plot/robustness_check/extended_cohorts/figJ2_extended_cohorts_OM_by_t.rds
+#       Plot/robustness_check/extended_cohorts/figJ3_extended_cohorts_AIM.rds
+#       Plot/robustness_check/extended_cohorts/figJ4_extended_cohorts_bin5_LML.rds
 
 # Description:
-#   This script recreate Figure H1: Overall Mobility(t = 1), 
+#   This script recreate Figure J1: Overall Mobility(t = 1), 
 #   Structural Mobility(t = 1), and Exchange Mobility(t = 1),
-#   Upward-Downward Mobility(t = 1); Figure H2: Overall Mobility 
-#   across synthetic generations.in paper; Figure H3: Aggregate 
-#   intergenerational memory at generation t = 1; Figure H4: Log-multiplicative
+#   Upward-Downward Mobility(t = 1); Figure J2: Overall Mobility 
+#   across synthetic generations.in paper; Figure J3: Aggregate 
+#   intergenerational memory at generation t = 1; Figure J4: Log-multiplicative
 #   Layer effect.
 #-------------------------------------------------------------------------------
 
@@ -361,7 +361,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH1_extended_cohorts_UP_DOWN.rds"
+      "figJ1_extended_cohorts_UP_DOWN.rds"
     )
   )
 )
@@ -371,7 +371,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH1_extended_cohorts_OM.rds"
+      "figJ1_extended_cohorts_OM.rds"
     )
   )
 )
@@ -381,7 +381,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH1_extended_cohorts_SM.rds"
+      "figJ1_extended_cohorts_SM.rds"
     )
   )
 )
@@ -391,7 +391,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH1_extended_cohorts_EM.rds"
+      "figJ1_extended_cohorts_EM.rds"
     )
   )
 )
@@ -401,7 +401,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH2_extended_cohorts_OM_by_t.rds"
+      "figJ2_extended_cohorts_OM_by_t.rds"
     )
   )
 )
@@ -411,7 +411,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH3_extended_cohorts_AIM.rds"
+      "figJ3_extended_cohorts_AIM.rds"
     )
   )
 )
@@ -421,7 +421,7 @@ saveRDS(
   file = path.expand(
     file.path(
       dir_plot,
-      "figH4_extended_cohorts_bin5_LML.rds"
+      "figJ4_extended_cohorts_bin5_LML.rds"
     )
   )
 )
@@ -430,7 +430,7 @@ saveRDS(
 sink(log_path, split = TRUE)
 
 cat("Saved plots to: ", dir_plot ,"\n")
-cat("Figure H1-H4 have been successfully replicated.\n")
+cat("Figure J1-H4 have been successfully replicated.\n")
 
 sink()
 
